@@ -59,17 +59,17 @@ Field (GNVS, ByteAcc, NoLock, Preserve)
 	CBMC,	32,	// 0x1c - 0x1f - Coreboot Memory Console
 	PM1I,	64,	// 0x20 - 0x27 - PM1 wake status bit
 	GPEI,	64,	// 0x28 - 0x2f - GPE wake status bit
-	TID1,	8,	// 0x26 - Touch Pad ID1(0 - All, 1,2,3... - for each)
-	TID2,	8,	// 0x27 - Touch Pad ID2(0 - All, 1,2,3... - for each)
-	CSTE,	16,	// 0x30 - Current display state
-	NSTE,	16,	// 0x32 - Next display state
-	SSTE,	16,	// 0x34 - Set display state
-	NDID,	 8,	// 0x35 - Number of Device IDs
-	DID1,	32,	// 0x36 - 0x39 - Device ID 1
-	DID2,	32,	// 0x3a - 0x3d - Device ID 2
-	DID3,	32,	// 0x3e - 0x41 - Device ID 3
-	DID4,	32,	// 0x42 - 0x45 - Device ID 4
-	DID5,	32,	// 0x46 - 0x49 - Device ID 5
+	TID1,	8,	// 0x30 - Touch Pad ID1(0 - All, 1,2,3... - for each)
+	TID2,	8,	// 0x31 - Touch Pad ID2(0 - All, 1,2,3... - for each)
+	CSTE,	16,	// 0x32 - Current display state
+	NSTE,	16,	// 0x34 - Next display state
+	SSTE,	16,	// 0x36 - Set display state
+	NDID,	 8,	// 0x38 - Number of Device IDs
+	DID1,	32,	// 0x39 - 0x3c - Device ID 1
+	DID2,	32,	// 0x3d - 0x40 - Device ID 2
+	DID3,	32,	// 0x41 - 0x44 - Device ID 3
+	DID4,	32,	// 0x45 - 0x49 - Device ID 4
+	DID5,	32,	// 0x49 - 0x4a - Device ID 5
 
 	/* ChromeOS specific */
 	Offset (0x100),

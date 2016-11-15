@@ -50,15 +50,15 @@ typedef struct {
 	u64	pm1i; /* 0x20 - 0x27 - PM1 wake status bit */
 	u64	gpei; /* 0x28 - 0x2f - GPE wake status bit */
 
-	u16	cste; /* 0x30 - current display state */
-	u16	nste; /* 0x32 - next display state */
-	u16	sste; /* 0x34 - set display state */
+	u8	tid1; /* 0x30 - Touch Pad ID 1. 0 - all, 1,2,3... - for each */
+	u8	tid2; /* 0x31 - Touch Pad ID 2. 0 - all, 1,2,3... - for each */
 
-	u8	ndid; /* 0x35 - number of device ids */
-	u32	did[5]; /* 0x36 - 4a device id 1..5 */
+	u16	cste; /* 0x32 - current display state */
+	u16	nste; /* 0x34 - next display state */
+	u16	sste; /* 0x36 - set display state */
 
-	u8	tid1; /* 0x37 - Touch Pad ID 1. 0 - all, 1,2,3... - for each */
-	u8	tid2; /* 0x38 - Touch Pad ID 2. 0 - all, 1,2,3... - for each */
+	u8	ndid; /* 0x38 - number of device ids */
+	u32	did[5]; /* 0x39 - 4a device id 1..5 */
 
 	u8	unused[179];
 
